@@ -14,6 +14,7 @@ const createWindow = () =>{
 
 }
 
+
 app.whenReady().then(() => {
     createWindow()
 })
@@ -24,4 +25,8 @@ app.on('window-all-closed', function () {
 
 app.on('active', () => {
     createWindow()
+})
+
+app.on('ready', () => {
+    console.log('应用准备好了')
 })

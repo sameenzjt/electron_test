@@ -9,6 +9,18 @@
 
 <body>
     <p id="info"></p>
+    <button id="btn">打开index2.html</button>
+    <form>
+        <input type="file" accept="video/*" />
+        <button type="submit">提交</button>
+    </form>
     <script src="./renderer.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', (event) => {
+            event.preventDefault()
+            const file = document.querySelector('input').files[0]
+            
+        })
+    </script>
 </body>
 </html>
